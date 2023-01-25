@@ -1,4 +1,6 @@
 spice_kernels
 Manifest.toml
 hyb2_v03.tm
+SHAPE_SFM_49k_v20180804.jld2
+SHAPE_SFM_49k_v20180804.obj
 .ipynb_checkpoints
