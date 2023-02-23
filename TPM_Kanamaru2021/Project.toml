@@ -1,8 +1,8 @@
 [deps]
-Astroshaper = "ab46f4a3-3c83-4d86-98d6-41a8b1a2e76e"
+ThermoPhysicalModeling = "ab46f4a3-3c83-4d86-98d6-41a8b1a2e76e"
 Downloads = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
 StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 
 [compat]
-Astroshaper = "0.0.2"
+ThermoPhysicalModeling = "0.0.3"

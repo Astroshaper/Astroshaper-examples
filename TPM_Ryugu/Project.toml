@@ -1,5 +1,5 @@
 [deps]
-Astroshaper = "ab46f4a3-3c83-4d86-98d6-41a8b1a2e76e"
+ThermoPhysicalModeling = "ab46f4a3-3c83-4d86-98d6-41a8b1a2e76e"
 Downloads = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
 GLMakie = "e9467ef8-e4e7-5192-8a1a-b1aee30e663a"
 JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
@@ -7,4 +7,4 @@ SPICE = "5bab7191-041a-5c2e-a744-024b9c3a5062"
 Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 
 [compat]
-Astroshaper = "0.0.2"
+ThermoPhysicalModeling = "0.0.3"
