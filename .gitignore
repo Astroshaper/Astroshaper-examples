@@ -1,13 +1,13 @@
 Manifest.toml
 .ipynb_checkpoints
 
-TPM_Ryugu/Ryugu/kernel
-TPM_Ryugu/Ryugu/shape
+TPM_Ryugu/kernel
+TPM_Ryugu/shape
 TPM_Ryugu/TPM_Ryugu.jld2
 
 TPM_Kanamaru2021/SHAPE_SFM_49k_v20180804.jld2
 TPM_Kanamaru2021/SHAPE_SFM_49k_v20180804.obj
 
-TPM_Didymos/Didymos/kernel
-TPM_Didymos/Didymos/shape
+TPM_Didymos/kernel
+TPM_Didymos/shape
 TPM_Didymos/TPM_Didymos.jld2
