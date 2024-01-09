@@ -1,12 +1,10 @@
 # Astroshaper-examples
-Example code for [Astroshaper.jl](https://github.com/MasanoriKanamaru/Astroshaper.jl)
+Example code for [Astroshaper](https://github.com/Astroshaper)
 
-Currently, this repository contains the following notebooks:
+This repository contains the following notebooks:
 * TPM_Ryugu
-    * TPM (Thermophysical modeling) calculation for [Ryugu](https://en.wikipedia.org/wiki/162173_Ryugu).
-    * Single asteroid
+    * TPM (Thermophysical modeling) calculation for asteroid [Ryugu](https://en.wikipedia.org/wiki/162173_Ryugu).
 * TPM_Didymos
-    * TPM calculation for [Didymos](https://en.wikipedia.org/wiki/65803_Didymos).
-    * Binary asteroid
+    * TPM calculation for a binary asteroid [Didymos](https://en.wikipedia.org/wiki/65803_Didymos).
 * TPM_Kanamaru2021
-    * Example notebook for [Kanamaru et al. (2021)](https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2021JE006863)
+    * Example notebook for YORP simulation in [Kanamaru et al. (2021)](https://doi.org/10.1029/2021JE006863).
