@@ -1,14 +1,19 @@
 Manifest.toml
 .ipynb_checkpoints
 
+TPM_Ryugu/*.csv
 TPM_Ryugu/kernel
-TPM_Ryugu/shape
-TPM_Ryugu/TPM_Ryugu.jld2
+TPM_Ryugu/shape/*
 
-TPM_Kanamaru2021/SHAPE_SFM_49k_v20180804.jld2
-TPM_Kanamaru2021/SHAPE_SFM_49k_v20180804.obj
+!REAMME.md
+!ryugu_test.obj
 
+TPM_Didymos/pri
+TPM_Didymos/sec
 TPM_Didymos/kernel
 TPM_Didymos/shape
-TPM_Didymos/TPM_Didymos.jld2
-TPM_Didymos/temp_maps_final.png
+
+!REAMME.md
+
+TPM_Kanamaru2021/SHAPE_SFM_49k_v20180804.obj
+
