@@ -1,13 +1,12 @@
 [deps]
 AsteroidThermoPhysicalModels = "ab46f4a3-3c83-4d86-98d6-41a8b1a2e76e"
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
 Downloads = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
-GLMakie = "e9467ef8-e4e7-5192-8a1a-b1aee30e663a"
-Git = "d7ba0133-e1db-5d97-8f8c-041e4b3a1eb2"
-JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
 LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+PlotlyJS = "f0f68f2c-4968-5e81-91da-67840de0976a"
+Rotations = "6038ab10-8711-5258-84ad-4b1120ba62dc"
 SPICE = "5bab7191-041a-5c2e-a744-024b9c3a5062"
-ScatteredInterpolation = "3f865c0f-6dca-5f4d-999b-29fe1e7e3c92"
-Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
+StaticArrays = "90137ffa-7385-5640-81b9-e52037218182"
 
 [compat]
-AsteroidThermoPhysicalModels = "0.0.4"
+AsteroidThermoPhysicalModels = "0.0.6"
