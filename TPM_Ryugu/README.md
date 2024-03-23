@@ -12,5 +12,5 @@ julia --project=.
  _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
 |__/                   |
 
-(Ryugu) pkg> add https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl#v0.0.4
+(Ryugu) pkg> add https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl#v0.0.6
 ```
