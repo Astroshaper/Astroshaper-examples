@@ -1,6 +1,9 @@
 # TPM_Ryugu
 
 ## Setup
+
+Please install `AsteroidThermoPhysicalModels.jl` with the specific version that corresponds to the sample code.
+
 ```
 julia --project=.
                _
