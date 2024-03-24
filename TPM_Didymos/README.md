@@ -1,5 +1,7 @@
 # TPM_Didymos
 
+Please install `AsteroidThermoPhysicalModels.jl` with the specific version that corresponds to the sample code.
+
 ## Setup
 ```
 julia --project=.
