@@ -8,10 +8,10 @@ This repository contains example notebooks demonstrating the use of [AsteroidThe
 
 ## Compatibility
 
-These examples are compatible with **AsteroidThermoPhysicalModels.jl v0.0.6**.
+These examples are compatible with **AsteroidThermoPhysicalModels.jl v0.0.7**.
 
 For examples compatible with other versions:
-- v0.0.7: See the [v0.0.7-compatible branch](https://github.com/Astroshaper/Astroshaper-examples/tree/v0.0.7-compatible) (coming soon)
+- v0.0.6: See the [v0.0.6-compatible branch](https://github.com/Astroshaper/Astroshaper-examples/tree/v0.0.6-compatible)
 
 ## Installation
 
