@@ -15,5 +15,5 @@ julia --project=.
  _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
 |__/                   |
 
-(TPM_Didymos) pkg> add https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl#v0.0.6
+(TPM_Didymos) pkg> add https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl#v0.0.7
 ```
