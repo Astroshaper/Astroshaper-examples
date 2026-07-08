@@ -8,14 +8,14 @@ This repository contains example notebooks demonstrating the use of [AsteroidThe
 
 ## Compatibility
 
-These examples are compatible with **AsteroidThermoPhysicalModels.jl v0.0.7**.
+These examples are compatible with **AsteroidThermoPhysicalModels.jl v0.2.1**.
 
 For examples compatible with other versions:
 - v0.0.6: See the [v0.0.6-compatible branch](https://github.com/Astroshaper/Astroshaper-examples/tree/v0.0.6-compatible)
 
 ## Installation
 
-1. Install Julia (1.6 or later recommended)
+1. Install Julia (1.10 or later recommended)
 2. Clone this repository:
    ```bash
    git clone https://github.com/Astroshaper/Astroshaper-examples.git
@@ -67,13 +67,13 @@ To run an example:
 
 ## Requirements
 
-- Julia 1.6 or later
+- Julia 1.10 or later
 - Jupyter (via IJulia.jl)
 - Internet connection for downloading shape models and ephemeris data
 
 ## License
 
-These examples are provided under the same license as AsteroidThermoPhysicalModels.jl.
+These examples are provided under the same license as [AsteroidThermoPhysicalModels.jl](https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl).
 
 ## Contributing
 
