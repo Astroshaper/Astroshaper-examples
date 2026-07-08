@@ -92,13 +92,13 @@ end
 
 
 function extract_edges(shape)
-    edges = Set{SVector{2, Int64}}()
+    edges = Set{Tuple{Int64, Int64}}()
 
     for face in shape.faces
         ## Add each side of face in order of decreasing node ID
-        push!(edges, [min(face[1], face[2]), max(face[1], face[2])])
-        push!(edges, [min(face[2], face[3]), max(face[2], face[3])])
-        push!(edges, [min(face[3], face[1]), max(face[3], face[1])])
+        push!(edges, (min(face[1], face[2]), max(face[1], face[2])))
+        push!(edges, (min(face[2], face[3]), max(face[2], face[3])))
+        push!(edges, (min(face[3], face[1]), max(face[3], face[1])))
     end
 
     return edges

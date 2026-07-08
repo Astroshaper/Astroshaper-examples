@@ -11,9 +11,9 @@ julia --project=.
   (_)     | (_) (_)    |
    _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
   | | | | | | |/ _` |  |
-  | | |_| | | | (_| |  |  Version 1.8.4 (2022-12-23)
+  | | |_| | | | (_| |  |  Version 1.12.6 (2026-04-09)
  _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
 |__/                   |
 
-(TPM_Didymos) pkg> add https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl#v0.0.7
+(TPM_Didymos) pkg> add AsteroidThermoPhysicalModels@0.2.1
 ```
