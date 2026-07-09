@@ -26,7 +26,7 @@ track a new version of the library they demonstrate.
 - Tag: [`v2026-07-08`](https://github.com/Astroshaper/Astroshaper-examples/tree/v2026-07-08)
 - Previous state: tag [`v0.0.7-compatible`](https://github.com/Astroshaper/Astroshaper-examples/tree/v0.0.7-compatible)
 
-## 2025-06-06
+## v0.0.7-compatible (2025-06-06)
 
 ### AsteroidThermoPhysicalModels.jl: v0.0.6 → v0.0.7
 
