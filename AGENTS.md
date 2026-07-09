@@ -29,13 +29,24 @@ plus a `README.md`.
    `README.md`.
 2. Update the root `README.md`'s `Compatible with: ...` line for that example, under
    `## Available Examples`.
-3. Add an entry to the root `CHANGELOG.md` (date, library, old → new version, commit hash,
-   PR number). See that file's "Versioning convention" section for the full policy and why
-   tags are dated rather than versioned.
-4. After merging, tag the merge commit with the merge date as `vYYYY-MM-DD` — this is not
+3. Clear all notebook cell outputs and `execution_count` values before committing.
+4. Follow the "Tagging a checkpoint" steps below.
+
+## Tagging a checkpoint
+
+`CHANGELOG.md` isn't limited to library migrations — it also covers other notable
+repository maintenance (tooling, conventions, restructuring). Whenever a change is
+worth a checkpoint:
+
+1. Add an entry to the root `CHANGELOG.md` (date, what changed, commit hash(es), PR
+   number(s)). See that file's "Versioning convention" section for the full policy and
+   why tags are dated rather than versioned.
+2. After merging, tag the merge commit with the merge date as `vYYYY-MM-DD` — this is not
    SemVer (this repo is not a registered package); the `v` is just a conventional prefix.
-5. Create a GitHub Release with that same tag name; its body is the matching CHANGELOG entry.
-6. Clear all notebook cell outputs and `execution_count` values before committing.
+   If several PRs land the same day, one tag at the end-of-day tip covering all of them is
+   fine — don't create a tag per PR.
+3. Create a GitHub Release with that same tag name; its body is the matching CHANGELOG
+   entry.
 
 ## Verifying notebook changes
 
