@@ -6,7 +6,7 @@ track a new version of the library they demonstrate.
 ## Versioning convention
 
 - Each entry below corresponds to a git tag named after the date the change was
-  merged (`YYYY-MM-DD`), e.g. [`2026-07-08`](https://github.com/Astroshaper/Astroshaper-examples/tree/2026-07-08).
+  merged (`vYYYY-MM-DD`), e.g. [`v2026-07-08`](https://github.com/Astroshaper/Astroshaper-examples/tree/v2026-07-08).
 - This repository is not a registered Julia package, so tags are not Semantic
   Versioning — they are just checkpoints you can check out to see the examples
   as they were for a specific past library version.
@@ -14,7 +14,7 @@ track a new version of the library they demonstrate.
   right now" is each example's own `Project.toml` `[compat]` entry, tracked in
   git history for that path.
 
-## 2026-07-08
+## v2026-07-08
 
 ### AsteroidThermoPhysicalModels.jl: v0.0.7 → v0.2.1
 
@@ -23,7 +23,7 @@ track a new version of the library they demonstrate.
   `SingleAsteroidOutputSpec`, `export_solution`), and moved shape loading to
   `AsteroidShapeModels.jl`.
 - Commit: [`23caad54`](https://github.com/Astroshaper/Astroshaper-examples/commit/23caad54a3335063d9c0b71bedf6e935331b5fbe) (PR [#18](https://github.com/Astroshaper/Astroshaper-examples/pull/18))
-- Tag: [`2026-07-08`](https://github.com/Astroshaper/Astroshaper-examples/tree/2026-07-08)
+- Tag: [`v2026-07-08`](https://github.com/Astroshaper/Astroshaper-examples/tree/v2026-07-08)
 - Previous state: tag [`v0.0.7-compatible`](https://github.com/Astroshaper/Astroshaper-examples/tree/v0.0.7-compatible)
 
 ## 2025-06-06
