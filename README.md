@@ -6,13 +6,6 @@ Example code for [Astroshaper](https://github.com/Astroshaper) packages.
 
 This repository contains example notebooks demonstrating the use of [AsteroidThermoPhysicalModels.jl](https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl) for thermophysical modeling of asteroids.
 
-## Compatibility
-
-These examples are compatible with **AsteroidThermoPhysicalModels.jl v0.2.1**.
-
-For examples compatible with other versions:
-- v0.0.6: See the [v0.0.6-compatible branch](https://github.com/Astroshaper/Astroshaper-examples/tree/v0.0.6-compatible)
-
 ## Installation
 
 1. Install Julia (1.10 or later recommended)
@@ -30,18 +23,20 @@ Thermophysical modeling (TPM) calculation for asteroid [Ryugu](https://en.wikipe
 - Single asteroid TPM
 - Temperature distribution analysis
 - Non-gravitational forces calculation
+- Compatible with: [AsteroidThermoPhysicalModels.jl](https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl) v0.2.1 (see [CHANGELOG.md](CHANGELOG.md) for older versions)
 
 ### TPM_Didymos
 TPM calculation for the binary asteroid system [Didymos](https://en.wikipedia.org/wiki/65803_Didymos).
 - Binary asteroid TPM
 - Mutual shadowing (eclipses)
 - Mutual heating between primary and secondary
+- Compatible with: [AsteroidThermoPhysicalModels.jl](https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl) v0.2.1 (see [CHANGELOG.md](CHANGELOG.md) for older versions)
 
 ### TPM_Kanamaru2021
 Example notebook for YORP simulation in [Kanamaru et al. (2021)](https://doi.org/10.1029/2021JE006863).
 - YORP effect calculation
 - Long-term rotational evolution
-- *Note: Currently compatible with v0.0.4 only*
+- Compatible with: [AsteroidThermoPhysicalModels.jl](https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl) v0.0.4 only (not yet migrated)
 
 ## Running the Examples
 
