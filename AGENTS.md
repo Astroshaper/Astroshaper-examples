@@ -18,6 +18,9 @@ plus a `README.md`.
   v0.0.4. Do not migrate this notebook to a newer API unless explicitly asked to — its code
   has diverged too far from later versions to update casually.
 - `plot_shape.jl` (repo root) — shared PlotlyJS plotting helper, `include`d by the notebooks.
+  In a Jupyter kernel it returns an `InlinePlot` (HTML in an `<iframe>`) instead of a
+  PlotlyJS `SyncPlot`, because recent IJulia (v1.34.4 with PlotlyJS v0.18.18) cannot
+  serialize the latter.
   It has no `Project.toml` of its own, so whatever packages it uses (currently
   `LinearAlgebra`, `PlotlyJS`) must be listed as deps in *every* example's `Project.toml`
   that includes it. If you add an import to this file, add the dependency to each consuming
