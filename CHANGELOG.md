@@ -16,7 +16,7 @@ tooling, conventions, restructuring) worth a checkpoint.
   right now" is each example's own `Project.toml` `[compat]` entry, tracked in
   git history for that path.
 
-## Unreleased
+## v2026-11-24
 
 ### AsteroidThermoPhysicalModels.jl: v0.2.1 → v0.3.1
 
@@ -26,11 +26,16 @@ tooling, conventions, restructuring) worth a checkpoint.
 - The setup cell of both notebooks now installs the packages from `Project.toml`
   (`Pkg.activate` / `Pkg.instantiate`) instead of listing `Pkg.add` calls.
 - README: added a "Getting Started" section for newcomers to Julia (juliaup, IJulia, how to
-  open the notebooks) and a list of useful links. The notebooks point to it.
+  open the notebooks) and a list of useful links. The notebooks point to it. The feature
+  lists of the examples were corrected to match what the notebooks do, and the READMEs of
+  `TPM_Ryugu` and `TPM_Didymos` were rewritten around the setup cell.
 - `plot_shape.jl`: in a Jupyter notebook `plot_shape` now returns an `InlinePlot`, which is
   displayed as HTML in an `<iframe>`. A bare PlotlyJS plot fails to display with recent
   IJulia (observed with IJulia v1.34.4 and PlotlyJS v0.18.18). Added `save_html` to save a
   plot as a standalone HTML file. No new dependency.
+- Commits: [`2d4458e3`](https://github.com/Astroshaper/Astroshaper-examples/commit/2d4458e33470d11091bada296680f8a10a6198cd) (PR [#23](https://github.com/Astroshaper/Astroshaper-examples/pull/23)),
+  PR [#24](https://github.com/Astroshaper/Astroshaper-examples/pull/24)
+- Tag: [`v2026-11-24`](https://github.com/Astroshaper/Astroshaper-examples/tree/v2026-11-24)
 - Previous state: tag [`v2026-07-09`](https://github.com/Astroshaper/Astroshaper-examples/tree/v2026-07-09)
 
 ## v2026-07-09
