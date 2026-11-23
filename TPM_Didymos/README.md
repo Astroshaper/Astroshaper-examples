@@ -15,5 +15,5 @@ julia --project=.
  _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
 |__/                   |
 
-(TPM_Didymos) pkg> add AsteroidThermoPhysicalModels@0.2.1
+(TPM_Didymos) pkg> add AsteroidThermoPhysicalModels@0.3.1
 ```
