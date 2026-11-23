@@ -16,6 +16,23 @@ tooling, conventions, restructuring) worth a checkpoint.
   right now" is each example's own `Project.toml` `[compat]` entry, tracked in
   git history for that path.
 
+## Unreleased
+
+### AsteroidThermoPhysicalModels.jl: v0.2.1 → v0.3.1
+
+- Migrated `TPM_Ryugu` and `TPM_Didymos` to the v0.3 API: `ThermoParams` with keyword
+  arguments, the depth grid in a separate `GridParams`, and `subsurface_face_ids` as a
+  keyword of `SingleAsteroidOutputSpec`.
+- The setup cell of both notebooks now installs the packages from `Project.toml`
+  (`Pkg.activate` / `Pkg.instantiate`) instead of listing `Pkg.add` calls.
+- README: added a "Getting Started" section for newcomers to Julia (juliaup, IJulia, how to
+  open the notebooks) and a list of useful links. The notebooks point to it.
+- `plot_shape.jl`: in a Jupyter notebook `plot_shape` now returns an `InlinePlot`, which is
+  displayed as HTML in an `<iframe>`. A bare PlotlyJS plot fails to display with recent
+  IJulia (observed with IJulia v1.34.4 and PlotlyJS v0.18.18). Added `save_html` to save a
+  plot as a standalone HTML file. No new dependency.
+- Previous state: tag [`v2026-07-09`](https://github.com/Astroshaper/Astroshaper-examples/tree/v2026-07-09)
+
 ## v2026-07-09
 
 ### Repository tooling: CHANGELOG, AGENTS.md, tag/release convention
