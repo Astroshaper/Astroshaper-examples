@@ -87,7 +87,60 @@ function plot_shape(shape;
         ),
     )
     
+    ## In a Jupyter notebook, return a wrapper that is displayed as HTML (see `InlinePlot`).
+    _in_ijulia() && return InlinePlot(PlotlyJS.Plot([trace_mesh, trace_wireframe], layout), 820)
+
     PlotlyJS.plot([trace_mesh, trace_wireframe], layout)
+end
+
+
+# ╔═══════════════════════════════════════════════════════════════════╗
+# ║                 Inline display in Jupyter notebooks               ║
+# ╚═══════════════════════════════════════════════════════════════════╝
+
+"""
+    InlinePlot
+
+Wrapper of a `PlotlyJS.Plot` that is displayed in a Jupyter notebook as a self-contained HTML page
+inside an `<iframe>`. plotly.js is loaded from the CDN, so an internet connection is required.
+
+A bare PlotlyJS plot cannot be displayed with recent versions of IJulia (observed with IJulia
+v1.34.4 and PlotlyJS v0.18.18): IJulia fails to serialize the `application/vnd.plotly.v1+json`
+output that PlotlyJS passes to it. Showing the plot as HTML avoids that output and needs no
+Jupyter extension.
+
+The wrapped plot is available as `inline_plot.plot`.
+"""
+struct InlinePlot
+    plot   ::PlotlyJS.Plot
+    height ::Int  # Height of the `<iframe>` [px]
+end
+
+# True when the code is running in a Jupyter kernel.
+_in_ijulia() = isdefined(Main, :IJulia) && isdefined(Main.IJulia, :inited) && Main.IJulia.inited
+
+function Base.show(io::IO, ::MIME"text/html", p::InlinePlot)
+    html = sprint(show, MIME("text/html"), p.plot)
+    html = replace(html, "&" => "&amp;", "\"" => "&quot;")  # Escape for the `srcdoc` attribute
+    print(io, "<iframe srcdoc=\"", html, "\" style=\"width: 100%; height: $(p.height)px; border: none;\"></iframe>")
+end
+
+Base.show(io::IO, ::MIME"text/plain", p::InlinePlot) = print(io, "InlinePlot (shown as HTML in a Jupyter notebook)")
+
+
+"""
+    save_html(filepath, plot)
+
+Save a plot made by `plot_shape` as a standalone HTML file, which can be opened in a web browser.
+"""
+save_html(filepath, p::InlinePlot) = save_html(filepath, p.plot)
+save_html(filepath, p::PlotlyJS.SyncPlot) = save_html(filepath, p.plot)
+
+function save_html(filepath, p::PlotlyJS.Plot)
+    open(filepath, "w") do io
+        show(io, MIME("text/html"), p)
+    end
+    return filepath
 end
 
 
