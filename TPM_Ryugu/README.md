@@ -1,19 +1,22 @@
 # TPM_Ryugu
 
+Thermophysical modeling (TPM) of asteroid [Ryugu](https://en.wikipedia.org/wiki/162173_Ryugu).
+
+Compatible with [AsteroidThermoPhysicalModels.jl](https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl) v0.3.1.
+
 ## Setup
 
-Please install `AsteroidThermoPhysicalModels.jl` with the specific version that corresponds to the sample code.
+1. Install Julia and IJulia as described in [Getting Started](../README.md#getting-started).
+2. Open `TPM_Ryugu.ipynb` (see [Running the Examples](../README.md#running-the-examples)).
+3. Only for the first time, uncomment and run the setup cell at the top of the notebook.
+   It installs the packages listed in `Project.toml`, including the version of
+   AsteroidThermoPhysicalModels.jl that the notebook was written for:
 
-```
-julia --project=.
-               _
-   _       _ _(_)_     |  Documentation: https://docs.julialang.org
-  (_)     | (_) (_)    |
-   _ _   _| |_  __ _   |  Type "?" for help, "]?" for Pkg help.
-  | | | | | | |/ _` |  |
-  | | |_| | | | (_| |  |  Version 1.12.6 (2026-04-09)
- _/ |\__'_|_|_|\__'_|  |  Official https://julialang.org/ release
-|__/                   |
+   ```julia
+   using Pkg
+   Pkg.activate(".")
+   Pkg.instantiate()
+   ```
 
-(Ryugu) pkg> add AsteroidThermoPhysicalModels@0.3.1
-```
+The SPICE kernels and the shape models are downloaded by the notebook into `kernel/` and `shape/`.
+The results are exported as CSV files into `output/`.

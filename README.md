@@ -4,7 +4,7 @@ Example code for [Astroshaper](https://github.com/Astroshaper) packages.
 
 ## Overview
 
-This repository contains example notebooks demonstrating the use of [AsteroidThermoPhysicalModels.jl](https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl) for thermophysical modeling of asteroids.
+This repository contains example notebooks demonstrating the use of [AsteroidThermoPhysicalModels.jl](https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl) for thermophysical modeling of asteroids. Shape models are handled by [AsteroidShapeModels.jl](https://github.com/Astroshaper/AsteroidShapeModels.jl).
 
 ## Getting Started
 
@@ -59,34 +59,37 @@ Then follow [Running the Examples](#running-the-examples).
 
 ### TPM_Ryugu
 Thermophysical modeling (TPM) calculation for asteroid [Ryugu](https://en.wikipedia.org/wiki/162173_Ryugu).
-- Single asteroid TPM
-- Temperature distribution analysis
-- Non-gravitational forces calculation
+- Single asteroid TPM with self-shadowing and self-heating
+- Energy balance check and 3D temperature map
 - Compatible with: [AsteroidThermoPhysicalModels.jl](https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl) v0.3.1 (see [CHANGELOG.md](CHANGELOG.md) for older versions)
 
 ### TPM_Didymos
 TPM calculation for the binary asteroid system [Didymos](https://en.wikipedia.org/wiki/65803_Didymos).
 - Binary asteroid TPM
 - Mutual shadowing (eclipses)
-- Mutual heating between primary and secondary
+- Mutual heating between primary and secondary (optional; turned off in the notebook to save computation time)
 - Compatible with: [AsteroidThermoPhysicalModels.jl](https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl) v0.3.1 (see [CHANGELOG.md](CHANGELOG.md) for older versions)
 
 ### TPM_Kanamaru2021
 Example notebook for YORP simulation in [Kanamaru et al. (2021)](https://doi.org/10.1029/2021JE006863).
 - YORP effect calculation
 - Long-term rotational evolution
-- Compatible with: [AsteroidThermoPhysicalModels.jl](https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl) v0.0.4 only (not yet migrated)
+- Compatible with: [AsteroidThermoPhysicalModels.jl](https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl) v0.0.4 only (frozen; not migrated to later versions)
 
 ## Running the Examples
 
 Each example directory contains:
 - A Jupyter notebook (`.ipynb` file)
 - A `Project.toml` file specifying dependencies
-- A README with specific instructions
+- A short README
+
+The steps below apply to `TPM_Ryugu` and `TPM_Didymos`. `TPM_Kanamaru2021` targets an old
+version of the library; see its own README.
 
 To run an example:
 1. Open the notebook in the example directory in one of the following ways.
-   - **JupyterLab / Jupyter Notebook**: if you do not have Jupyter, IJulia can install it for you.
+   - **JupyterLab / Jupyter Notebook**: start `julia` in the example directory and run the
+     lines below. If you do not have Jupyter, IJulia offers to install it for you.
      ```julia
      using IJulia
      jupyterlab(dir=pwd())  # or notebook(dir=pwd())
@@ -94,7 +97,7 @@ To run an example:
    - **VS Code**: install the [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter),
      open the `.ipynb` file and select the Julia kernel.
 2. Only for the first time, uncomment and run the setup cell at the top of the notebook.
-   It installs the packages listed in `Project.toml`:
+   It installs the packages listed in `Project.toml`, in the versions the notebook was written for:
    ```julia
    using Pkg
    Pkg.activate(".")
@@ -122,7 +125,7 @@ To run an example:
 
 ## License
 
-These examples are provided under the same license as [AsteroidThermoPhysicalModels.jl](https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl).
+These examples are provided under the same license as [AsteroidThermoPhysicalModels.jl](https://github.com/Astroshaper/AsteroidThermoPhysicalModels.jl) (MIT License).
 
 ## Contributing
 
